@@ -13,4 +13,6 @@ void error(const char* message);
 void panic(const char* message);
 void halt(const char* message);
 
+#define VERSION "Yauc 0.0.2"
+
 #endif

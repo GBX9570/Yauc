@@ -3,6 +3,7 @@
 #include <stddef.h>
 #include "libraries/vga.h"
 #include "libraries/log.h"
+#include "libraries/idt.h"
 
 void cmain(void) {
     clear();
@@ -18,5 +19,6 @@ void cmain(void) {
     printf("                 ^^^^^^^^^^ eventually\n");
     printcolour(vga_entry_colour(VGA_COLOUR_WHITE, VGA_COLOUR_BLACK));
     success("GDT Loaded!");
-    halt("Nothing left to do.");
+    idt_init();
+    success("IDT Loaded!");
 }

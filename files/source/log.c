@@ -39,7 +39,7 @@ void error(const char* message) {
 void panic(const char* message) {
     clear();
     __asm__ __volatile__("cli");
-    printcolour(vga_entry_colour(VGA_COLOUR_WHITE, VGA_COLOUR_RED));
+    printcolour(vga_entry_colour(VGA_COLOUR_RED, VGA_COLOUR_BLACK));
     printf("dP    dP                            \n");
     printf("Y8.  .8P                            \n");
     printf(" Y8aa8P  .d8888b. dP    dP .d8888b. \n");
@@ -47,11 +47,16 @@ void panic(const char* message) {
     printf("   88    88.  .88 88.  .88 88.  ... \n");
     printf("   dP    `88888P8 `88888P' `88888P' \n");
     printf("oooooooooooooooooooooooooooooooooooo\n");
+    printcolour(vga_entry_colour(VGA_COLOUR_WHITE, VGA_COLOUR_BLACK));
     printf("Yauc has ran into an unexpected problem.\n");
-    printcolour(vga_entry_colour(VGA_COLOUR_RED, VGA_COLOUR_BLACK));
-    printf("Exception:");
+    printf("Exception: ");
     printf(message);
     printf("\n");
+    printf(VERSION);
+    printf("\n");
+    printf("Please report this on the GitHub.\n");
+    printf("https://github.com/GBX9570/yauc\n");
+    info("It is now safe to turn off the computer.");
     __asm__ __volatile("hlt");
 }
 
