@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stddef.h>
+#include "libraries/printf.h"
 #include "libraries/vga.h"
 #include "libraries/log.h"
 

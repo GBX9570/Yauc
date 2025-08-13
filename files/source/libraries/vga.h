@@ -31,7 +31,6 @@ void printcolour(uint8_t colour);
 void terminal_putentryat(char c, uint8_t colour, size_t x, size_t y);
 void terminal_putchar(char c);
 void terminal_write(const char* data, size_t size);
-void printf(const char* data);
 
 extern const size_t VGA_WIDTH;
 extern const size_t VGA_HEIGHT;

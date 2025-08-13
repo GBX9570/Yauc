@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "../libraries/gdt.h"
+#include "../libraries/log.h"
 
 struct gdt_entry {
     unsigned short limit_low;
@@ -23,11 +24,9 @@ struct gdt_pointer gdtp;
 extern void gdtf();
 
 void gdt_encoder(int num, unsigned long base, unsigned long limit, unsigned char access, unsigned char gran) {
-/*  if (base > 0xFFFFFFFF) {
-        fatal("The GDT cannot be encoded above 0xFFFF.");
-        __asm__("cli; hlt");
+    if (base > 0xFFFFFFFF) {
+        panic("The GDT cannot be encoded above 0xFFFF.");
     } 
-    commented out temporarily*/
     
     gdt[num].base_low = (base & 0xFFFF);
     gdt[num].base_middle = (base >> 16) & 0xFF;

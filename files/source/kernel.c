@@ -1,9 +1,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stddef.h>
-#include "libraries/vga.h"
 #include "libraries/log.h"
 #include "libraries/idt.h"
+#include "libraries/printf.h"
 
 void cmain(void) {
     clear();
@@ -21,4 +21,6 @@ void cmain(void) {
     success("GDT Loaded!");
     idt_init();
     success("IDT Loaded!");
+
+    printf("test");
 }

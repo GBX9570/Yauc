@@ -22,5 +22,6 @@ global _start
 section .text ; main code
 _start: ; start function
     mov esp, stack_end
+    xor ebp, ebp
     call gdt_setup
     call cmain

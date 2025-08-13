@@ -9,96 +9,99 @@
 void exception(int x) {
     switch(x) {
         case 1:
-            exception1();
+            exception0();
             break;
         case 2:
-            exception2();
+            exception1();
             break;
         case 3:
-            exception3();
+            exception2();
             break;
         case 4:
-            exception4();
+            exception3();
             break;
         case 5:
-            exception5();
+            exception4();
             break;
         case 6:
-            exception6();
+            exception5();
             break;
         case 7:
-            exception7();
+            exception6();
             break;
         case 8:
-            exception8();
+            exception7();
             break;
         case 9:
-            exception9();
+            exception8();
             break;
         case 10:
-            exception10();
+            exception9();
             break;
         case 11:
-            exception11();
+            exception10();
             break;
         case 12:
-            exception12();
+            exception11();
             break;
         case 13:
-            exception13();
+            exception12();
             break;
         case 14:
-            exception14();
+            exception13();
             break;
         case 15:
-            exception15();
+            exception14();
             break;
         case 16:
+            exception15();
+            break;
+        case 17:
             exception16();
             break;    
-        case 17:
+        case 18:
             exception17();
             break;
-        case 18:
+        case 19:
             exception18();
             break;
-        case 19:
+        case 20:
             exception19();
             break;
-        case 20:
+        case 21:
             exception20();
             break;
-        case 21:
+        case 22:
             exception21();
             break;
-        case 22:
+        case 23:
             exception22();
             break;
-        case 23:
+        case 24:
             exception23();
             break;
-        case 24:
+        case 25:
             exception24();
             break;
-        case 25:
+        case 26:
             exception25();
             break;
-        case 26:
+        case 27:
             exception26();
             break;
-        case 27:
+        case 28:
             exception27();
             break;
-        case 28:
+        case 29:
             exception28();
             break;
-        case 29:
+        case 30:
             exception29();
             break;
-        case 30:
+        case 31:
             exception30();
             break;
-        case 31:
+        case 32:
             exception31();
             break;
         default:

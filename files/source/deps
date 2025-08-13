@@ -1,0 +1,10 @@
+/home/gbx/Documents/Yauc/files/source/io/io.o: \
+ /home/gbx/Documents/Yauc/files/source/io/io.c \
+ /home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdbool.h \
+ /home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdint.h \
+ /home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdint-gcc.h \
+ /home/gbx/Documents/Yauc/files/source/io/../libraries/io.h
+/home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdbool.h:
+/home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdint.h:
+/home/gbx/opt/cross/lib/gcc/i686-elf/15.2.0/include/stdint-gcc.h:
+/home/gbx/Documents/Yauc/files/source/io/../libraries/io.h:

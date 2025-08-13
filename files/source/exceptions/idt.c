@@ -51,7 +51,6 @@ void idt_init() {
     }
 
     __asm__ volatile ("lidt %0" : : "m"(idtr));
-    outb(0x21, 0xFF);
-    outb(0xA1, 0xFF);
+
     __asm__ volatile ("sti");
 }
